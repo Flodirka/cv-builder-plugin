@@ -1,0 +1,12 @@
+{
+  "name": "cv-builder",
+  "version": "0.1.0",
+  "description": "Draft, tailor, review, and rewrite resume content as canonical cv-builder/v1 Markdown and hand it to the browser-based CV Builder through the public MCP server. No accounts; editing and PDF export stay in the browser.",
+  "author": {
+    "name": "CV Builder contributors"
+  },
+  "homepage": "https://flodirka.github.io/cv-builder-web/",
+  "repository": "https://github.com/Flodirka/cv-builder-plugin",
+  "license": "MIT",
+  "keywords": ["resume", "cv", "ats", "markdown", "job-search"]
+}

@@ -1,0 +1,6 @@
+{
+  "cv-builder": {
+    "type": "http",
+    "url": "https://cv-builder-relay.flodirka.workers.dev/mcp"
+  }
+}
