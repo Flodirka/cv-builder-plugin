@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "cv-builder",
-  "version": "0.1.0",
-  "description": "CV Builder plugin: resume content skills plus the public CV Builder MCP server.",
+  "version": "0.1.1",
+  "description": "CV Builder plugin with four resume-writing skills and the public CV Builder MCP server.",
   "owner": {
     "name": "CV Builder contributors"
   },
@@ -10,9 +10,10 @@
     {
       "name": "cv-builder",
       "description": "Draft, tailor, review, and rewrite resume content and open it in the browser-based CV Builder.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": "./",
       "category": "productivity"
     }
   ]
 }
+

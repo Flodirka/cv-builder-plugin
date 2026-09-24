@@ -7,6 +7,7 @@ Voluntary support helps cover hosting and development time.
 - [Patreon](https://www.patreon.com/15806620/join)
 - [DonationAlerts](https://dalink.to/flodirka)
 
-Support never affects the product. There are no donor perks, no priority support channel, and
-no feature gates — the plugin, the editor, and the relay behave identically for everyone.
+Support never affects the product. There are no donor perks, priority support channels, or
+feature gates. The plugin, editor, and relay behave identically for everyone.
 Links above may change; the current list always lives in this file.
+
