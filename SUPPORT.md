@@ -10,4 +10,3 @@ Voluntary support helps cover hosting and development time.
 Support never affects the product. There are no donor perks, priority support channels, or
 feature gates. The plugin, editor, and relay behave identically for everyone.
 Links above may change; the current list always lives in this file.
-

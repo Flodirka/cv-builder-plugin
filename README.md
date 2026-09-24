@@ -87,4 +87,3 @@ development:
 
 See [SUPPORT.md](SUPPORT.md) for details. Support is voluntary and never affects the product:
 no accounts, no perks, no feature gates.
-
