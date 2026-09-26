@@ -69,7 +69,7 @@ The relay holds it in an ephemeral session for at most five minutes, deletes it 
 acknowledges the import, logs no content, and keeps no accounts. The Builder itself keeps the
 resume in the browser only.
 
-Read the complete [privacy policy](PRIVACY.md) and [terms of use](TERMS.md).
+Read the complete [privacy policy](https://github.com/Flodirka/cv-builder-plugin/blob/main/PRIVACY.md) and [terms of use](TERMS.md).
 
 ## Versioning
 
