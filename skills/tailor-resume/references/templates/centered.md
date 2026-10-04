@@ -4,15 +4,17 @@ language: en
 layout: one-column
 ---
 
-# Alex Doe{zone=header}
+# Alex Doe{zone=header align=center}
 
-Senior Game Designer{zone=header}
+Senior Game Designer{zone=header align=center}
 
-alex@example.com · Berlin, Germany · Portfolio{zone=header}
+alex@example.com · Berlin, Germany · Portfolio{zone=header align=center}
 
-Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
+## Summary{zone=main align=center uppercase=false bold=false}
 
-## Experience{zone=main}
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=main}
+
+## Experience{zone=main align=center uppercase=false bold=false}
 
 ### Senior Game Designer{zone=main}
 **Subtitle:** Example Studio
@@ -33,7 +35,7 @@ Game designer with seven years of experience in progression systems and live ope
 - Built and tested three combat prototypes; the team selected one for production.
 - Documented progression rules and edge cases, giving engineers a shared reference for implementation.
 
-## Education{zone=main}
+## Education{zone=main align=center uppercase=false bold=false}
 
 ### BSc, Computer Systems{zone=main}
 **Subtitle:** Example University
@@ -42,7 +44,7 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Projects{zone=main}
+## Projects{zone=main align=center uppercase=false bold=false}
 
 ### Progression Simulator{zone=main}
 **Subtitle:** Independent project
@@ -53,15 +55,15 @@ Game designer with seven years of experience in progression systems and live ope
 **Link:** [Project](https://example.com/projects/progression)
 - Built a browser tool to compare reward curves and shared the source with a community of game designers.
 
-## Skills{zone=main}
+## Skills{zone=main align=center uppercase=false bold=false}
 
 - Design: Systems design, Economy, Live ops{zone=main}
 
-## Languages{zone=main}
+## Languages{zone=main align=center uppercase=false bold=false}
 
 - English: C1{zone=main}
 
-## Certificates{zone=main}
+## Certificates{zone=main align=center uppercase=false bold=false}
 
 ### Game Economy Design{zone=main}
 **Subtitle:** Example Academy
@@ -70,6 +72,6 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Interests{zone=main}
+## Interests{zone=main align=center uppercase=false bold=false}
 
 Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}

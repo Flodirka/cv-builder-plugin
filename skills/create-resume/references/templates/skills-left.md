@@ -1,18 +1,32 @@
 ---
 schema: cv-builder/v1
 language: en
-layout: one-column
+layout: two-column
 ---
 
-# Alex Doe{zone=header}
+# Alex Doe{zone=header align=left}
 
-Senior Game Designer{zone=header}
+Senior Game Designer{zone=header align=left}
 
-alex@example.com · Berlin, Germany · Portfolio{zone=header}
+alex@example.com · Berlin, Germany · Portfolio{zone=header align=left}
 
-Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
+::: columns{zone=main}
 
-## Experience{zone=main}
+::: column width=1
+
+## Skills{zone=sidebar icon=lucide:chart-column}
+
+- Design: Systems design, Economy, Live ops{zone=sidebar}
+
+::: endcolumn
+
+::: column width=2
+
+## Summary{zone=main icon=lucide:file-text}
+
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=main}
+
+## Experience{zone=main icon=lucide:briefcase}
 
 ### Senior Game Designer{zone=main}
 **Subtitle:** Example Studio
@@ -33,7 +47,7 @@ Game designer with seven years of experience in progression systems and live ope
 - Built and tested three combat prototypes; the team selected one for production.
 - Documented progression rules and edge cases, giving engineers a shared reference for implementation.
 
-## Education{zone=main}
+## Education{zone=main icon=lucide:graduation-cap}
 
 ### BSc, Computer Systems{zone=main}
 **Subtitle:** Example University
@@ -42,7 +56,7 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Projects{zone=main}
+## Projects{zone=main icon=lucide:link}
 
 ### Progression Simulator{zone=main}
 **Subtitle:** Independent project
@@ -53,23 +67,6 @@ Game designer with seven years of experience in progression systems and live ope
 **Link:** [Project](https://example.com/projects/progression)
 - Built a browser tool to compare reward curves and shared the source with a community of game designers.
 
-## Skills{zone=main}
+::: endcolumn
 
-- Design: Systems design, Economy, Live ops{zone=main}
-
-## Languages{zone=main}
-
-- English: C1{zone=main}
-
-## Certificates{zone=main}
-
-### Game Economy Design{zone=main}
-**Subtitle:** Example Academy
-**Start:**
-**End:** 2024
-**Location:**
-**Description:**
-
-## Interests{zone=main}
-
-Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}
+::: endcolumns

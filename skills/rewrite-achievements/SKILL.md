@@ -14,16 +14,15 @@ staying strictly truthful. Output preserves the canonical `cv-builder/v1` entry 
 
 ## Rules
 
-1. **Structure** — each bullet names a strong action verb, what was done, and the result (the XYZ
+1. **Structure:** each bullet names a strong action verb, what was done, and the result (the XYZ
    schema: "achieved X, measured by Y, by doing Z"). One to two lines per bullet.
-2. **Honest quantification** — use only numbers the user provided. When a metric clearly exists
-   but is unknown, ask for it or insert a bracketed placeholder such as `[X%]` and flag it in
-   your reply. Never fabricate figures.
-3. **Tense and voice** — past tense for finished roles, present tense for the current one; no
+2. **Honest quantification:** use only numbers the user provided. When a metric clearly exists
+   but is unknown, ask for it outside the final resume or describe a confirmed non-numeric result. Never fabricate figures.
+3. **Tense and voice:** past tense for finished roles, present tense for the current one; no
    first person; drop filler ("various", "multiple", "responsible for") unless it is factual.
-4. **Scope preservation** — a rewrite may reorder, split, or merge the user's facts but never
+4. **Scope preservation:** a rewrite may reorder, split, or merge the user's facts but never
    adds employers, dates, titles, or skills.
-5. **Style, no AI slop** — direct verbs and concrete statements; no promotional or bureaucratic
+5. **Style, no AI slop:** direct verbs and concrete statements; no promotional or bureaucratic
    wording ("robust", "pivotal", "showcase", «является», «осуществлять», «в рамках»,
    «инновационный», «ключевой»), no rhetorical templates ("not just X, but Y" / «не просто X, а
    Y»), no forced triplets, no manufactured anecdotes or emotions. One stable term per concept;
@@ -37,15 +36,25 @@ staying strictly truthful. Output preserves the canonical `cv-builder/v1` entry 
    `**Description:**`, `**Link:**`) untouched, each on its own line, and return valid canonical
    Markdown.
 3. Return the rewritten bullets or entries, then one short note per bullet explaining what
-   changed, flagging any placeholders that still need the user's numbers.
+   changed and listing any missing facts separately.
 4. If the user wants the whole document updated, compose the revised canonical Markdown per the
-   grammar and, when the CV Builder MCP server is connected, offer one `open_builder` call —
+   grammar and, when the CV Builder MCP server is connected, offer one `open_builder` call;
    editing, ATS preflight, and PDF export happen in the browser Builder.
+
+## Format and country guidance
+
+Choose the format requested by the employer. The MCP template resources and the examples shipped with create-resume and tailor-resume match the editor and use fictional facts. Compact and Standard remain available under the classic-compact and simple-ats filenames. Minimal replaces the redundant USA example. Two columns, Skills left/right and the other column examples are supported now.
+
+Japan is an editable A4 rirekisho example with tables, Japanese text and an explicit page break; set language: ja. It follows the MHLW section structure and is not a government-issued form. Keep education and employment chronological and separate; update name readings, dates, qualifications, motivation and preferences. Sex is optional in the MHLW sample; add a photo when required. A separate shokumu keirekisho may also be requested. Do not convert it to a Western ATS section order.
+
+Use Minimal or Standard for a general USA resume, usually without a photo or unnecessary personal details; check federal and employer-specific instructions separately. Australia includes relevant licences; obtain consent before providing requested referees. Europe uses Europass-style sections, not an official Europass export. Check the employer's form for China and Korea; complete Chinese/Korean font support is not included. Read the country guidance and source links in references/markdown-v1.md.
+
+Use confirmed facts only. When no metric is available, describe a specific non-numeric result. Keep questions and unconfirmed placeholders outside the final resume. Preserve meaningful names, dates, links and supported block attributes when polishing text.
 
 ## Never
 
 - Never invent metrics, employers, dates, or outcomes.
 - Never render, request, or receive a PDF; never choose a renderer; never emit a layout
-  identifier or any other presentation parameter.
-- Never show real personal data in examples — any example uses reserved fictional domains (the
+  identifier or renderer settings. Supported document block attributes are allowed.
+- Never show real personal data in examples; any example uses reserved fictional domains (the
   `example.com` / `example.test` family).

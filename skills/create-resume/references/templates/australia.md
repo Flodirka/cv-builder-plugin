@@ -4,13 +4,19 @@ language: en
 layout: one-column
 ---
 
-# Alex Doe{zone=header}
+# Alex Doe{zone=header align=left}
 
-Senior Game Designer{zone=header}
+Senior Game Designer{zone=header align=left}
 
-alex@example.com · Berlin, Germany · Portfolio{zone=header}
+alex@example.com · Berlin, Germany · Portfolio{zone=header align=left}
 
-Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
+## Professional profile{zone=main}
+
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=main}
+
+## Key skills{zone=main}
+
+- Design: Systems design, Economy, Live ops{zone=main}
 
 ## Experience{zone=main}
 
@@ -42,26 +48,7 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Projects{zone=main}
-
-### Progression Simulator{zone=main}
-**Subtitle:** Independent project
-**Start:** 2023
-**End:** 2024
-**Location:**
-**Description:**
-**Link:** [Project](https://example.com/projects/progression)
-- Built a browser tool to compare reward curves and shared the source with a community of game designers.
-
-## Skills{zone=main}
-
-- Design: Systems design, Economy, Live ops{zone=main}
-
-## Languages{zone=main}
-
-- English: C1{zone=main}
-
-## Certificates{zone=main}
+## Licences and certifications{zone=main}
 
 ### Game Economy Design{zone=main}
 **Subtitle:** Example Academy
@@ -70,6 +57,6 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Interests{zone=main}
+## Referees{zone=main}
 
-Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}
+References available on request.{zone=main}

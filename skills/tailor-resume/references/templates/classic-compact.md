@@ -1,63 +1,75 @@
 ---
 schema: cv-builder/v1
 language: en
+layout: one-column
 ---
 
-# Alex Example
+# Alex Doe{zone=header}
 
-alex.example@example.com · [Portfolio](https://portfolio.example.test)
+Senior Game Designer{zone=header}
 
-## Summary
+alex@example.com · Berlin, Germany · Portfolio{zone=header}
 
-Product designer with eight years of fictional experience across example studios.
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
 
-## Experience
+## Experience{zone=main}
 
-### Senior Product Designer
+### Senior Game Designer{zone=main}
 **Subtitle:** Example Studio
 **Start:** 2021
 **End:** Present
-**Location:** Remote
-**Description:** Led the fictional design system for an example product.
-**Link:** [Case study](https://portfolio.example.test/case-study)
-- Raised fictional activation by 20% through an example onboarding redesign.
-- Mentored three example designers.
+**Location:** Berlin, Germany
+**Description:**
+- Redesigned tutorial progression after six playtests, reducing first\-session drop\-off from 32% to 24%.
+- Wrote specifications for eight seasonal events and coordinated delivery with art, engineering and QA.
+- Created an economy dashboard that helped the team review reward balance before each release.
 
-### Product Designer
-**Subtitle:** Sample Agency
-**Start:** 2018
+### Game Designer{zone=main}
+**Subtitle:** Prototype Team
+**Start:** 2019
 **End:** 2021
-- Shipped fictional flows for example clients.
+**Location:** Berlin, Germany
+**Description:**
+- Built and tested three combat prototypes; the team selected one for production.
+- Documented progression rules and edge cases, giving engineers a shared reference for implementation.
 
-## Education
+## Education{zone=main}
 
-### BA, Design
+### BSc, Computer Systems{zone=main}
 **Subtitle:** Example University
-**Start:** 2014
-**End:** 2018
+**Start:**
+**End:** 2019
+**Location:**
+**Description:**
 
-## Projects
+## Projects{zone=main}
 
-### Example Side Project
-**Subtitle:** Independent
+### Progression Simulator{zone=main}
+**Subtitle:** Independent project
 **Start:** 2023
-**End:** Present
-**Link:** [Repository](https://code.example.test/example-side-project)
-- Built a fictional tool used by an example community.
+**End:** 2024
+**Location:**
+**Description:**
+**Link:** [Project](https://example.com/projects/progression)
+- Built a browser tool to compare reward curves and shared the source with a community of game designers.
 
-## Skills
+## Skills{zone=main}
 
-- Fictional product discovery
-- Example prototyping
+- Design: Systems design, Economy, Live ops{zone=main}
 
-## Languages
+## Languages{zone=main}
 
-- English — native
-- Russian — fluent
+- English: C1{zone=main}
 
-## Certificates
+## Certificates{zone=main}
 
-### Example Design Certification
-**Subtitle:** Example Institute
-**Start:** 2022
-**End:** 2022
+### Game Economy Design{zone=main}
+**Subtitle:** Example Academy
+**Start:**
+**End:** 2024
+**Location:**
+**Description:**
+
+## Interests{zone=main}
+
+Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}
