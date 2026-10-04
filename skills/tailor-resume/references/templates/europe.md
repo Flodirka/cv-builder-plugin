@@ -4,15 +4,17 @@ language: en
 layout: one-column
 ---
 
-# Alex Doe{zone=header}
+# Alex Doe{zone=header align=left}
 
-Senior Game Designer{zone=header}
+Senior Game Designer{zone=header align=left}
 
-alex@example.com · Berlin, Germany · Portfolio{zone=header}
+alex@example.com · Berlin, Germany · Portfolio{zone=header align=left}
 
-Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
+## About me{zone=main}
 
-## Experience{zone=main}
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=main}
+
+## Work experience{zone=main}
 
 ### Senior Game Designer{zone=main}
 **Subtitle:** Example Studio
@@ -33,7 +35,7 @@ Game designer with seven years of experience in progression systems and live ope
 - Built and tested three combat prototypes; the team selected one for production.
 - Documented progression rules and edge cases, giving engineers a shared reference for implementation.
 
-## Education{zone=main}
+## Education and training{zone=main}
 
 ### BSc, Computer Systems{zone=main}
 **Subtitle:** Example University
@@ -42,26 +44,15 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Projects{zone=main}
-
-### Progression Simulator{zone=main}
-**Subtitle:** Independent project
-**Start:** 2023
-**End:** 2024
-**Location:**
-**Description:**
-**Link:** [Project](https://example.com/projects/progression)
-- Built a browser tool to compare reward curves and shared the source with a community of game designers.
-
-## Skills{zone=main}
-
-- Design: Systems design, Economy, Live ops{zone=main}
-
-## Languages{zone=main}
+## Language skills{zone=main}
 
 - English: C1{zone=main}
 
-## Certificates{zone=main}
+## Digital and professional skills{zone=main}
+
+- Design: Systems design, Economy, Live ops{zone=main}
+
+## Additional information{zone=main}
 
 ### Game Economy Design{zone=main}
 **Subtitle:** Example Academy
@@ -69,7 +60,3 @@ Game designer with seven years of experience in progression systems and live ope
 **End:** 2024
 **Location:**
 **Description:**
-
-## Interests{zone=main}
-
-Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}

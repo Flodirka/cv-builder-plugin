@@ -1,17 +1,15 @@
 # CV Builder Markdown v1
 
-Complete grammar for the Markdown passed to the open_builder tool. A filled Classic Compact
-example closes this document; the Simple ATS skeleton is the cv-builder://templates/simple-ats
-resource.
+Grammar for Markdown passed to open_builder. The template index and examples match the editor. All sample facts are fictional; replace them before submitting an application.
 
 ## Limits
 
-- UTF-8 without a BOM, at most 65,536 bytes, 128 blocks, and 50,000 Unicode scalar values.
+- UTF-8, at most 65,536 bytes, 128 blocks including nested containers and children, and 50,000 Unicode scalar values. Columns nest at most 16 levels.
 - Only tab, carriage return, and line feed control characters are allowed.
 
 ## Frontmatter
 
-The document starts with YAML frontmatter and no other YAML keys:
+The document starts with YAML frontmatter. Only schema, language and optional layout keys are supported:
 
 ```
 ---
@@ -20,11 +18,11 @@ language: en
 ---
 ```
 
-`schema` is exactly `cv-builder/v1`; `language` is `en` or `ru`.
+`schema` is exactly `cv-builder/v1`; `language` is `en`, `ru`, or `ja`. Optional `layout` is `one-column` or `two-column` for legacy documents.
 
 ## Document structure
 
-- `# Full Name` — exactly one level-one heading, directly after the frontmatter.
+- Use one level-one name heading in the header. Explicit zone attributes allow blocks to appear elsewhere.
 - One contact paragraph under the name: email and labeled links separated by ` · `, for example
   `alex.example@example.com · [Portfolio](https://portfolio.example.test)`. Only absolute
   HTTP(S) links are active.
@@ -62,6 +60,36 @@ stays a plain heading. Every metadata row keeps its exact marker on its own line
   `**Link:** [Label](https://example.com)`. A bare URL is rejected.
 - Dash bullets after the metadata rows belong to the entry.
 
+## Block formatting
+
+A trailing attribute group sets zone=header|sidebar|main|footer. Heading, paragraph, labeled text, list and table blocks support align=left|center|right. Heading attributes: icon=lucide:name (use a supported local Lucide name), underline=true|false, uppercase=true|false, bold=true|false. A list's first item may set columns=1|2. A labeled text row uses **Label:** text.
+
+Columns contain two or three columns, each with a positive relative width and any supported blocks. Close every column and container explicitly:
+~~~markdown
+::: columns{zone=main}
+::: column width=1
+## Skills{zone=main}
+- Systems design
+::: endcolumn
+::: column width=2
+## Experience{zone=main}
+Confirmed experience goes here.{zone=main}
+::: endcolumn
+::: endcolumns
+~~~
+
+Tables have two to six columns. widths lists positive relative widths. Every row must have the same cell count. An optional separator after row one makes it the header. Escape literal pipes as \|; <br> inside a cell denotes a line break, while escaped \<br\> is literal text. Cell content is plain text, not HTML or active Markdown links.
+~~~markdown
+::: table{zone=main widths=1,1,6}
+| 年 | 月 | 学歴 |
+| --- | --- | --- |
+| 2019 | 3 | 例示大学 卒業 |
+::: endtable
+::: pagebreak{zone=main}
+~~~
+
+Photos: ![Photo](data:image/png;base64,...){zone=header width=90 height=120 shape=square placement=right}. shape is square, rounded or circle; placement is left, right or above. Width/height are positive pixels. Use complete valid PNG/JPEG data, never this abbreviated example.
+
 ## Content quality
 
 The format is fixed, and so is the writing bar. The server instructions and the CV Builder
@@ -71,10 +99,10 @@ same rules; apply them whether or not a skill is installed.
 - Write outcomes, not duties: "achieved X, measured by Y, by doing Z".
 - Lead every bullet with a strong action verb and a result; keep bullets to one or two lines.
 - Quantify only with numbers the user actually provided. When a metric is missing, ask for it
-  or leave a bracketed placeholder such as [X%] — never invent numbers, employers, titles,
+  or describe a confirmed non-numeric result. Flag unresolved gaps outside the final resume. Never invent numbers, employers, titles,
   dates, tools, or certificates.
 - Match the language of the document to the language of the vacancy when there is one.
-- One page by default; two pages only with 5+ years of genuinely relevant content.
+- Follow employer requirements for length and form. Keep relevant content concise; do not impose a years-of-experience cutoff.
 - Write like a professional, not a model: no assistant filler, no formulaic openings or
   conclusions, no staged sincerity, no unsupported authority ("industry reports say",
   «эксперты считают»), no rhetorical templates ("not just X, but Y" / «не просто X, а Y»),
@@ -87,78 +115,105 @@ same rules; apply them whether or not a skill is installed.
   «инновационный», «передовой», «бесшовный».
 - Never manufacture human signals: no anecdotes, emotions, idioms, or invented specifics added
   to sound human.
+- Contacts: Use your name, email, phone and relevant portfolio links. Check every link and omit personal details the employer does not need.
+- Summary: Use two or three sentences to explain your role, relevant experience and strongest evidence. Replace generic claims with specific work you have done.
+- Experience: For most resumes, list the most recent role first. Include employer, title and consistent dates. Describe your action and the result; use numbers only when you can verify them.
+- Skills and education: List skills you can demonstrate, relevant qualifications and required licences. Match the vacancy's wording where it describes your actual experience.
+- Before sending: Replace every fictional example with your own facts. Follow the employer's form, language and length requirements. Check the exported PDF for page breaks, readable text and working links.
+- Fictional example: Redesigned tutorial progression after six playtests, reducing first-session drop-off from 32% to 24%. Use your own confirmed action and result; a concrete non-numeric result is fine.
+
+## Country guidance
+
+- USA: Minimal or Standard is a suitable starting point. Prefer a clear chronology and omit a photo and unnecessary personal details. Federal and other employer-specific applications may have separate instructions. This editor exports A4; use the employer's required page size if it differs. [Source](https://cloudfront.careeronestop.org/JobSearch/Resumes/ResumeGuide/formatting.aspx)
+- Australia: Include relevant skills, recent jobs and required licences. Provide referees only when requested and with their consent. Follow the vacancy's length requirements rather than a fixed rule based on years of experience. [Source](https://www.workforceaustralia.gov.au/content/online-learning/course/what-needs-to-be-in-your-resume/assets/Resume%20planner.pdf)
+- Europe: The Europe template uses Europass-style sections. It is an editable example, not an official Europass export. Include relevant education, work and language skills; use the official Europass service when that exact format is requested. [Source](https://europass.europa.eu/en/create-europass-cv)
+- Japan: Japan is a two-page A4 rirekisho example with editable tables and Japanese text. Keep education and employment in chronological order, grouped separately. Update name readings, dates, qualifications, motivation and preferences. Sex is optional in the MHLW sample; add a photo when required. Use the employer's form when specified. A separate shokumu keirekisho may also be requested. [Source](https://www.hellowork.mhlw.go.jp/member/career_doc01.html)
+- Canada and UK: Keep recent, relevant experience and clear contact details. Check local and employer instructions before adding a photo or personal information; do not assume a single required national form. [Source](https://www.jobbank.gc.ca/findajob/resources/write-good-resume)
+- China and South Korea: Check the employer's application form and any separate personal statement. There is no claim of compatibility with a universal national form here. The bundled Japanese font does not provide complete Chinese or Korean font coverage. [Source](https://www.work24.go.kr/cm/c/d/0180/retrieveSiteEasyDetailHpcm.do?tycd=E6T00&utzeGuidId=GUID000102)
+
+Unsupported YAML keys are ignored with warnings. Use only the documented frontmatter keys.
 
 ## Rejected constructs
 
-Tables (`|`), raw HTML, code fences, images, block quotes, ordered and task lists, extra YAML
-keys, bare URLs in `**Link:**` rows, and layout directives (JSON, IDs, renderer settings,
-`layoutId`) are rejected. The server answers MARKDOWN_INVALID with the first broken line;
-fix the document and resend it in full.
+Raw HTML, code fences, block quotes, ordered/task lists, bare URLs in Link metadata, and renderer identifiers/settings are unsupported. Fix validation errors and resend the complete document.
+Remote photos are blocked by the public editor. Prefer uploading a photo in the browser. Small embedded PNG/JPEG data URLs may fit within relay limits; never fetch a user's photo without authorization.
 
-## Complete example (Classic Compact)
+## Complete example (Compact)
 
 ```markdown
 ---
 schema: cv-builder/v1
 language: en
+layout: one-column
 ---
 
-# Alex Example
+# Alex Doe{zone=header}
 
-alex.example@example.com · [Portfolio](https://portfolio.example.test)
+Senior Game Designer{zone=header}
 
-## Summary
+alex@example.com · Berlin, Germany · Portfolio{zone=header}
 
-Product designer with eight years of fictional experience across example studios.
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
 
-## Experience
+## Experience{zone=main}
 
-### Senior Product Designer
+### Senior Game Designer{zone=main}
 **Subtitle:** Example Studio
 **Start:** 2021
 **End:** Present
-**Location:** Remote
-**Description:** Led the fictional design system for an example product.
-**Link:** [Case study](https://portfolio.example.test/case-study)
-- Raised fictional activation by 20% through an example onboarding redesign.
-- Mentored three example designers.
+**Location:** Berlin, Germany
+**Description:**
+- Redesigned tutorial progression after six playtests, reducing first\-session drop\-off from 32% to 24%.
+- Wrote specifications for eight seasonal events and coordinated delivery with art, engineering and QA.
+- Created an economy dashboard that helped the team review reward balance before each release.
 
-### Product Designer
-**Subtitle:** Sample Agency
-**Start:** 2018
+### Game Designer{zone=main}
+**Subtitle:** Prototype Team
+**Start:** 2019
 **End:** 2021
-- Shipped fictional flows for example clients.
+**Location:** Berlin, Germany
+**Description:**
+- Built and tested three combat prototypes; the team selected one for production.
+- Documented progression rules and edge cases, giving engineers a shared reference for implementation.
 
-## Education
+## Education{zone=main}
 
-### BA, Design
+### BSc, Computer Systems{zone=main}
 **Subtitle:** Example University
-**Start:** 2014
-**End:** 2018
+**Start:**
+**End:** 2019
+**Location:**
+**Description:**
 
-## Projects
+## Projects{zone=main}
 
-### Example Side Project
-**Subtitle:** Independent
+### Progression Simulator{zone=main}
+**Subtitle:** Independent project
 **Start:** 2023
-**End:** Present
-**Link:** [Repository](https://code.example.test/example-side-project)
-- Built a fictional tool used by an example community.
+**End:** 2024
+**Location:**
+**Description:**
+**Link:** [Project](https://example.com/projects/progression)
+- Built a browser tool to compare reward curves and shared the source with a community of game designers.
 
-## Skills
+## Skills{zone=main}
 
-- Fictional product discovery
-- Example prototyping
+- Design: Systems design, Economy, Live ops{zone=main}
 
-## Languages
+## Languages{zone=main}
 
-- English — native
-- Russian — fluent
+- English: C1{zone=main}
 
-## Certificates
+## Certificates{zone=main}
 
-### Example Design Certification
-**Subtitle:** Example Institute
-**Start:** 2022
-**End:** 2022
+### Game Economy Design{zone=main}
+**Subtitle:** Example Academy
+**Start:**
+**End:** 2024
+**Location:**
+**Description:**
+
+## Interests{zone=main}
+
+Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}
 ```

@@ -14,7 +14,7 @@ persistent server-side storage.
 
 | Skill                  | What it does                                                                 |
 | ---------------------- | ---------------------------------------------------------------------------- |
-| `create-resume`        | Draft a new resume from your facts in a shipped skeleton (EN/RU).            |
+| `create-resume`        | Draft a new resume from your facts in a shipped skeleton (EN/RU/JA).         |
 | `tailor-resume`        | Adapt an existing resume to a job posting without inventing facts.           |
 | `review-resume`        | Critique content, structure, and ATS safety with the Builder's own criteria. |
 | `rewrite-achievements` | Rewrite bullets into action-result form with honest quantification.          |
@@ -24,8 +24,7 @@ persistent server-side storage.
 `.mcp.json` binds the remote server `cv-builder` at
 `https://cv-builder-relay.flodirka.workers.dev/mcp` (Streamable HTTP, anonymous, no
 credentials). Its one tool, `open_builder`, accepts canonical Markdown and returns a link that
-opens the document in the Builder and expires after five minutes. The server also exposes four
-content resources: the complete grammar, the template index, and two ready-to-use template skeletons.
+opens the document in the Builder and expires after five minutes. The server also exposes the Markdown grammar, a template index and fifteen editable examples matching the editor.
 Each skill carries the relevant resource copies in its `references/`, regenerated from the
 server source on every release.
 
@@ -34,7 +33,9 @@ they do not direct model behavior. The grammar resource contains the format, val
 content-quality guidance, while each skill adds workflow-specific instructions. Tailoring is
 optional, so an agent should ask for a job description only when the user requests tailoring
 and the posting would change the content. Formatting always uses one canonical Markdown shape
-and exposes no presentation parameters.
+with supported columns, tables, photos, heading icons and page breaks. Renderer settings are owned by the browser editor.
+
+Version 0.2.0 adds country guidance and the Japanese rirekisho example alongside CV Builder Web 0.2.0 and MCP 1.1.0. All examples use fictional facts.
 
 ## Related projects
 

@@ -1,16 +1,12 @@
 ---
 schema: cv-builder/v1
 language: en
-layout: one-column
+layout: two-column
 ---
 
 # Alex Doe{zone=header}
 
-Senior Game Designer{zone=header}
-
-alex@example.com · Berlin, Germany · Portfolio{zone=header}
-
-Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header}
+Game designer with seven years of experience in progression systems and live operations. Turns playtest findings into feature specifications and measurable improvements to onboarding.{zone=header align=left}
 
 ## Experience{zone=main}
 
@@ -33,6 +29,10 @@ Game designer with seven years of experience in progression systems and live ope
 - Built and tested three combat prototypes; the team selected one for production.
 - Documented progression rules and edge cases, giving engineers a shared reference for implementation.
 
+::: columns{zone=main}
+
+::: column width=1
+
 ## Education{zone=main}
 
 ### BSc, Computer Systems{zone=main}
@@ -42,34 +42,16 @@ Game designer with seven years of experience in progression systems and live ope
 **Location:**
 **Description:**
 
-## Projects{zone=main}
+::: endcolumn
 
-### Progression Simulator{zone=main}
-**Subtitle:** Independent project
-**Start:** 2023
-**End:** 2024
-**Location:**
-**Description:**
-**Link:** [Project](https://example.com/projects/progression)
-- Built a browser tool to compare reward curves and shared the source with a community of game designers.
+::: column width=1
 
 ## Skills{zone=main}
 
 - Design: Systems design, Economy, Live ops{zone=main}
 
-## Languages{zone=main}
+::: endcolumn
 
-- English: C1{zone=main}
+::: endcolumns
 
-## Certificates{zone=main}
-
-### Game Economy Design{zone=main}
-**Subtitle:** Example Academy
-**Start:**
-**End:** 2024
-**Location:**
-**Description:**
-
-## Interests{zone=main}
-
-Writes practical notes on game balancing and runs monthly prototype playtests.{zone=main}
+alex@example.com · Berlin, Germany · Portfolio{zone=footer align=center}
