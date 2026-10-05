@@ -14,6 +14,15 @@ Produce one complete resume as canonical `cv-builder/v1` Markdown. The full gram
 Builder MCP server is connected, prefer its live `cv-builder://markdown/v1` and
 `cv-builder://templates/*` resources; they are the source of truth for these shipped copies.
 
+## Required writing-quality pass
+
+Read [references/writing-quality.md](references/writing-quality.md) before composing or rewriting text. Apply its full contract:
+preserve the factual baseline and permitted scope, edit each Russian or English segment in its
+language, run the final humanization pass, then compare against the source and validate Markdown.
+Keep missing facts and questions outside the resume. When an outcome or metric is unknown, retain
+a precise description of the known work rather than inventing an achievement.
+The reference ships inside this skill; do not require or invoke separately installed writing skills.
+
 ## Workflow
 
 1. **Collect facts.** Ask for what is missing, under these intake prompts: personal information
@@ -45,9 +54,9 @@ Builder MCP server is connected, prefer its live `cv-builder://markdown/v1` and
 
 ## Writing craft
 
-- **Achievements over duties.** Write outcomes, not responsibilities. Use the XYZ schema:
+- **Achievements over duties.** Prefer confirmed outcomes to generic responsibilities. Use the XYZ schema only when its facts and causal link are supplied:
   "achieved X, measured by Y, by doing Z."
-- **Impact-first bullets.** Lead each bullet with a strong action verb and a result, not a task
+- **Impact-first bullets.** Lead each bullet with a specific action and a confirmed result when available, or a precise task
   description. One to two lines per bullet; no walls of text.
 - **Quantify, never fabricate.** Use real metrics wherever possible (revenue, conversion,
   retention, team size, ratings). If no verified number is available, describe a specific confirmed result. Ask about missing facts outside the final resume.
@@ -58,27 +67,9 @@ Builder MCP server is connected, prefer its live `cv-builder://markdown/v1` and
 
 ## Writing style
 
-Resume text must read as written by a professional, not generated. Apply in both languages:
-
-- Direct verbs and concrete statements; neutral, serious tone. One stable term per concept; no
-  synonym rotation for variety.
-- No assistant filler, formulaic openings or conclusions, staged sincerity ("to be honest"),
-  rhetorical templates ("not just X, but Y" / «не просто X, а Y»), forced triplets, or fake
-  ranges whose endpoints are not on the same scale.
-- English: avoid unless exact terminology; delve, robust, pivotal, testament, underscore,
-  crucial, multifaceted, intricate, foster, enhance, bolster, garner, showcase, tapestry,
-  vibrant, interplay, valuable, and "landscape" used abstractly. Never start a sentence with
-  "Additionally" or "Notably". Prefer "is" and "are" over "serves as", "boasts", or "features"
-  when a simple copula is accurate.
-- Russian: avoid inflated or bureaucratic wording; «является», «данный», «осуществлять»,
-  «обеспечивать», «способствует», «демонстрирует», «в рамках», «представляет собой», «играет
-  ключевую роль», «важно отметить», «ключевой», «значительный», «уникальный», «инновационный»,
-  «передовой», «бесшовный», «синергия», and abstract uses of «экосистема» or «ландшафт».
-  Replace chains of abstract nouns with direct verbs.
-- Never manufacture human signals: no anecdotes, emotions, idioms, or invented specifics added
-  to sound human. A clean professional text does not need them.
-- In resume text: straight quotation marks, no em dashes, sentence-case headings, no decorative
-  bold emphasis.
+Apply the complete language and humanization passes in
+[references/writing-quality.md](references/writing-quality.md). Keep professional language direct,
+specific and natural while preserving the user's facts, voice and requested form.
 
 ## Format and country guidance
 
