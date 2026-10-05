@@ -13,6 +13,15 @@ Assess the resume and report concrete, fixable findings. If the document is cano
 [references/markdown-v1.md](references/markdown-v1.md). The review itself is a findings list;
 revise the document only when the user asks.
 
+## Required writing-quality pass
+
+Read [references/writing-quality.md](references/writing-quality.md) before reviewing text. Apply its full contract:
+preserve the factual baseline and permitted scope, edit each Russian or English segment in its
+language, run the final humanization pass, then compare against the source and validate Markdown.
+Use review mode: quote the exact wording, explain the issue, and propose a correction without
+silently applying it. Report writing advice separately from ATS or employer-format findings.
+The reference ships inside this skill; do not require or invoke separately installed writing skills.
+
 ## What to check
 
 Separate the Builder's heuristic ATS findings from writing advice and employer-specific requirements. ATS warnings do not certify or invalidate a national form:
@@ -25,11 +34,11 @@ Separate the Builder's heuristic ATS findings from writing advice and employer-s
   sections and no duplicated section headings.
 - **Entry hygiene:** every entry has a title; dates are parseable (`2021`, `05/2021`,
   `Present`) and the start is not after the end; no empty bullets and no empty entries.
-- **Content quality:** bullets lead with action verbs and carry honest, user-provided
-  quantification (achievements over duties: "achieved X, measured by Y, by doing Z");
-  consistent tense (past for finished roles, present for the current one); no first-person
+- **Content quality:** bullets name specific actions and include outcomes or quantification only
+  when confirmed by the user. Use XYZ only with supplied measurements and causal links;
+  consistent tense (past for completed work, present for ongoing work); no first-person
   filler; choose lists or table fields appropriate to the requested format.
-- **Style and AI slop:** flag generic duty statements with no outcome, promotional or
+- **Style and AI slop:** flag vague duty statements, promotional or
   bureaucratic wording ("robust", "pivotal", "showcase", «является», «осуществлять», «в
   рамках», «ключевой», «инновационный»), rhetorical templates ("not just X, but Y" / «не просто
   X, а Y»), forced triplets, walls of text, and unsupported superlatives. Resume text should

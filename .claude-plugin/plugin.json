@@ -1,6 +1,6 @@
 {
   "name": "cv-builder",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Draft, tailor, review, and rewrite resume content as canonical cv-builder/v1 Markdown, then open it in the browser-based CV Builder through the public MCP server. No account is required; editing and PDF export stay in the browser.",
   "author": {
     "name": "CV Builder contributors"

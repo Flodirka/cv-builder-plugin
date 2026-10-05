@@ -12,13 +12,24 @@ Turn duty-style bullets ("responsible for X") into achievement bullets (action â
 staying strictly truthful. Output preserves the canonical `cv-builder/v1` entry convention from
 [references/markdown-v1.md](references/markdown-v1.md).
 
+## Required writing-quality pass
+
+Read [references/writing-quality.md](references/writing-quality.md) before composing or rewriting text. Apply its full contract:
+preserve the factual baseline and permitted scope, edit each Russian or English segment in its
+language, run the final humanization pass, then compare against the source and validate Markdown.
+Keep missing facts and questions outside the resume. When an outcome or metric is unknown, retain
+a precise description of the known work rather than inventing an achievement.
+The reference ships inside this skill; do not require or invoke separately installed writing skills.
+
 ## Rules
 
-1. **Structure:** each bullet names a strong action verb, what was done, and the result (the XYZ
-   schema: "achieved X, measured by Y, by doing Z"). One to two lines per bullet.
+1. **Structure:** name the action and what was done; include a result only if confirmed. Use XYZ
+   ("achieved X, measured by Y, by doing Z") only with supplied measurements and causal links.
+   When only a duty is known, make it precise and ask about outcomes separately. One to two lines
+   per bullet.
 2. **Honest quantification:** use only numbers the user provided. When a metric clearly exists
    but is unknown, ask for it outside the final resume or describe a confirmed non-numeric result. Never fabricate figures.
-3. **Tense and voice:** past tense for finished roles, present tense for the current one; no
+3. **Tense and voice:** past tense for completed work, present tense for ongoing work; no
    first person; drop filler ("various", "multiple", "responsible for") unless it is factual.
 4. **Scope preservation:** a rewrite may reorder, split, or merge the user's facts but never
    adds employers, dates, titles, or skills.
