@@ -7,9 +7,9 @@
 <p align="center">Write your resume with an agent. Edit and export it in your browser.</p>
 
 <p align="center">
-  <a href="https://flodirka.github.io/cv-builder-web/"><img src="assets/readme/open-editor.svg" alt="Open CV Builder editor" height="44"></a>
-  <a href="#install"><img src="assets/readme/install-plugin.svg" alt="Install CV Builder plugin" height="44"></a>
-  <a href="#support-the-project"><img src="assets/readme/support.svg" alt="Support the project" height="44"></a>
+  <a href="https://flodirka.github.io/cv-builder-web/"><img src="assets/readme/open-editor.svg" alt="Open CV Builder editor" height="36"></a>
+  <a href="#install"><img src="assets/readme/install-plugin.svg" alt="Install CV Builder plugin" height="36"></a>
+  <a href="#support-the-project"><img src="assets/readme/support.svg" alt="Support the project" height="36"></a>
 </p>
 
 <p align="center"><a href="#skills">Skills</a> · <a href="#install">Installation</a> · <a href="#writing-quality">Writing quality</a> · <a href="#privacy">Privacy</a></p>
@@ -118,10 +118,12 @@ CV Builder is free and account-free. If it is useful to you, you can support fur
 development:
 
 <p align="center">
-  <a href="https://boosty.to/gdview_gdbrain/donate"><img src="assets/readme/boosty.svg" alt="Support on Boosty" height="44"></a>
-  <a href="https://www.patreon.com/15806620/join"><img src="assets/readme/patreon.svg" alt="Support on Patreon" height="44"></a>
-  <a href="https://dalink.to/flodirka"><img src="assets/readme/donation-alerts.svg" alt="Support on DonationAlerts" height="44"></a>
+  <a href="https://boosty.to/gdview_gdbrain/donate"><img src="assets/readme/boosty.svg" alt="Support on Boosty" height="36"></a>
+  <a href="https://www.patreon.com/15806620/join"><img src="assets/readme/patreon.svg" alt="Support on Patreon" height="36"></a>
+  <a href="https://dalink.to/flodirka"><img src="assets/readme/donation-alerts.svg" alt="Support on DonationAlerts" height="36"></a>
 </p>
 
 See [SUPPORT.md](SUPPORT.md) for details. Support is voluntary and never affects the product:
 no accounts, no perks, no feature gates.
+
+[README asset notices](assets/readme/NOTICES.md) · Inter and Lucide.

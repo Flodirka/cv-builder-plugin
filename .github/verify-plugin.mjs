@@ -21,6 +21,7 @@ const approvedFiles = new Set([
   "SUPPORT.md",
   "TERMS.md",
   "assets/logo.svg",
+  "assets/readme/NOTICES.md",
   "assets/readme/boosty.svg",
   "assets/readme/donation-alerts.svg",
   "assets/readme/editor-preview.png",
